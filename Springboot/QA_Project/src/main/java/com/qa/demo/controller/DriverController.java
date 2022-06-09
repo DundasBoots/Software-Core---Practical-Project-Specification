@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.qa.demo.dao.Driver;
-import com.qa.demo.dto.DriverDto;
+import com.qa.demo.domain.dao.Driver;
+import com.qa.demo.domain.dto.DriverDto;
 import com.qa.demo.service.DriverService;
 
 @RestController
