@@ -57,15 +57,6 @@ public class DriverControllerTest {
 		ResultMatcher responseStatus = status().isCreated();
 		ResultMatcher responseContent = content().json(this.jsonifier.writeValueAsString(this.mapToDTO(testDriver)));
 		this.mock.perform(request).andExpect(responseStatus).andExpect(responseContent);
-
-//		final Driver newDriver = new Driver(null, "Sergio", "Perez", 32, "Mexico", 3, "3rd");
-//		final Driver savedDriver = new Driver(4L, newDriver.getFirst_name(), newDriver.getSurname(), newDriver.getAge(), newDriver.getNationality(), newDriver.getRace_wins(), newDriver.getBest_championship_position());
-
-//		this.mock
-//				.perform(post("/driver/create").contentType(MediaType.APPLICATION_JSON)
-//						.content(this.jsonifier.writeValueAsString(newDriver)))
-//				.andExpect(status().isCreated()).andExpect((ResultMatcher) content().json(this.jsonifier.writeValueAsString(savedDriver)));
-//	}
 	}
 
 	@Test
