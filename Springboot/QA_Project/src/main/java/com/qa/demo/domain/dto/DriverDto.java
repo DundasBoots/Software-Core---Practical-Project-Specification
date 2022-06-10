@@ -1,7 +1,5 @@
 package com.qa.demo.domain.dto;
 
-import com.qa.demo.domain.dao.Team;
-
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

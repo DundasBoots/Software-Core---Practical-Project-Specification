@@ -7,8 +7,8 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.qa.demo.dao.Driver;
-import com.qa.demo.dto.DriverDto;
+import com.qa.demo.domain.dao.Driver;
+import com.qa.demo.domain.dto.DriverDto;
 import com.qa.demo.exception.DriverException;
 import com.qa.demo.repo.DriverRepo;
 
