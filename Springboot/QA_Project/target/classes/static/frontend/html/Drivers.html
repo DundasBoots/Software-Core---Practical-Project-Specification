@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>F1 Drivers</title>
+</head>
+        <body>
+
+            <body>
+                <nav class="navbar">
+                    <div class="col-6">
+                        <center>
+                            <a href="../html/Drivers.html" class="navbar-brand">Drivers</a>
+                        </center>
+                    </div>
+                    <div class="col-6">
+                        <center>
+                            <a href="../html/Teams.html" class="navbar-brand">Teams</a>
+                        </center>
+                    </div>
+                </nav>
+                <center>
+                    <h1>Driver Roster</h1>
+                </center>
+                <br>
+                <div id="" class="container">
+                    <h3>Input Form</h3>
+                    <br>
+                    <div>
+                        <input id="DriverID" placeholder="Enter ID to update">
+                        <input id="FirstName" type="text" placeholder="First Name">
+                        <input id="Surname" type="text" placeholder="Surname">
+                        <input id="Age" type="number" placeholder="Age">
+                        <input id="Nationality" type="text" placeholder="Country of Nationality">
+                        <input id="RaceWin" type="number" placeholder="Race Wins">
+                        <input id="BestChamp" type="text" placeholder="Best Championship Position">
+                        <button id="create">Add Driver</button>
+                    </div>
+                    <br>
+                </div>
+                <br>
+                <div class="container">
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">First Name</th>
+                                <th scope="col">Surname</th>
+                                <th scope="col">Age</th>
+                                <th scope="col">Nationality</th>
+                                <th scope="col">Race Wins</th>
+                                <th scope="col">Best Championship Finish</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table_body">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button id="read">Read All</button>
+                    <input id="DriverID" type="number" placeholder="Enter ID">
+                    <button onclick="deleteAndRead()"> Delete Driver</button>
+                </div>
+                <br>
+                <div id="" class="container">
+                    <h3>Update Form</h3>
+                    <br>
+                    <div>
+                        <input id="DriverID" placeholder="Enter ID to update">
+                        <input id="uFirstName" type="text" placeholder="First Name">
+                        <input id="uSurname" type="text" placeholder="Surname">
+                        <input id="uAge" type="number" placeholder="Age">
+                        <input id="uNationality" type="text" placeholder="Country of Nationality">
+                        <input id="uRaceWin" type="number" placeholder="Race Wins">
+                        <input id="uBestChamp" type="text" placeholder="Best Championship Position">
+                        <button onclick="updateAndRead();">Update Driver</button>
+                    </div>
+                    <br>
+                </div>
+                <div class="container">
+                    <center>
+                        <h2>Read by ID/Updated Entry</h2>
+                    </center>
+                    <ul id="updateList"></ul>
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">First Name</th>
+                                <th scope="col">Surname</th>
+                                <th scope="col">Age</th>
+                                <th scope="col">Nationality</th>
+                                <th scope="col">Race Wins</th>
+                                <th scope="col">Best Championship Finish</th>
+
+                            </tr>
+                        </thead>
+                        <tbody id="u_table">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <input id="readId" type="number" placeholder="Enter ID">
+                    <button onclick="readById()"> Read by ID</button>
+                </div>
+                <br>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+                    crossorigin="anonymous">
+                    </script>
+
+                <script src="../js/drivers.js"></script>
+            </body>
+
+</html>
